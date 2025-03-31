@@ -1,9 +1,9 @@
 {
-	"id": "Obs-Tex-Tools",
-	"name": "Obsidian-Tex-Tools",
+	"id": "TexEnvPreRender",
+	"name": "TexEnvPreRender",
 	"version": "0.0.1",
 	"minAppVersion": "0.0.1",
-	"description": "Renders our question environments",
+	"description": "Renders questionenv and enumerate environments.",
 	"author": "Rohan Modi",
 	"authorUrl": "rohanmodi.ca",
 	"isDesktopOnly": false

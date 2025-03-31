@@ -1,3 +1,5 @@
+/* === Styles for Question Environment === */
+
 /* Style for the replacement line */
 .bulldozer-marker-line {
   display: inline-block;
@@ -7,7 +9,7 @@
   vertical-align: middle;
   position: relative;
   margin: 2px 0;
-  cursor: pointer; /* Add pointer cursor to indicate clickability */
+  cursor: pointer; /* Add pointer cursor to indicate clickability on start marker */
 }
 
 /* Style for the name box inside the start line */
@@ -23,28 +25,68 @@
   border-radius: 3px;
   white-space: nowrap;
   line-height: 1;
+  cursor: pointer; /* Ensure pointer cursor */
 }
 
-.bulldozer-name-box::before
-{
+.bulldozer-name-box::before {
 	content: "Question "
 }
-
-/* Add a class to identify the start widget specifically for clicks */
-.bulldozer-start-widget-wrapper {
-    /* This class is primarily for event targeting */
-    display: contents; /* Prevents affecting layout, just for targeting */
-}
-
 
 /* Style the text content part */
 .cm-editor .cm-line span.bulldozerTEXT {
   color: var(--text-muted);
 }
 
-/* Optional: Style when the start marker text is revealed */
-.cm-editor .cm-line span.bulldozer-revealed-marker {
-    color: grey;
-    font-style: italic;
-    background-color: rgba(200, 200, 200, 0.2);
+
+/* === Styles for Enumerate Environment === */
+
+/* Style for the replacement lines for enumerate */
+.enumerate-marker-line {
+  display: inline-block; /* Changed from block to inline-block for better flow */
+  width: 100%;
+  height: 1px; /* Thinner line maybe */
+  background-color: var(--text-faint); /* Use theme variable for subtlety */
+  vertical-align: middle;
+  position: relative;
+  margin: 4px 0; /* Add some vertical margin */
+  border-radius: 1px;
+}
+
+/* Style for the format box inside the start line */
+.enumerate-format-box {
+  position: absolute;
+  left: 5%; /* Position slightly from the left */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--background-secondary); /* Use theme variable */
+  color: var(--text-muted); /* Use theme variable */
+  padding: 1px 6px;
+  font-size: 0.75em; /* Smaller font */
+  border-radius: 4px;
+  white-space: nowrap;
+  line-height: 1;
+  border: 1px solid var(--background-modifier-border); /* Subtle border */
+  cursor: pointer; /* Ensure pointer cursor */
+  font-family: var(--font-monospace); /* Use monospace font */
+}
+
+/* Optional: Add hover effect to format box */
+.enumerate-format-box:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-normal);
+}
+
+/* Style for the generated item identifier */
+.enumerate-item-identifier {
+  display: inline-block; /* Ensure it behaves like text but allows margin */
+  font-weight: bold;
+  color: var(--text-accent); /* Make it stand out slightly */
+  margin-right: 0.5em; /* Space between identifier and list item content */
+  min-width: 1.5em; /* Ensure some minimum width for alignment */
+  text-align: right; /* Align identifiers nicely if min-width is used */
+}
+
+/* Optional: Adjust alignment if needed */
+.cm-line .enumerate-item-identifier {
+    vertical-align: baseline;
 }
