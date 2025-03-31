@@ -1,11 +1,10 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "bulldozer-highlighter",
+	"name": "Bulldozer Highlighter",
 	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"minAppVersion": "1.0.0",
+	"description": "Highlights the word 'bulldozer' in the editor.",
+	"author": "Your Name",
+	"authorUrl": "https://your-website.com",
 	"isDesktopOnly": false
 }

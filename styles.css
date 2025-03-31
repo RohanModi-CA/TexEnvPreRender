@@ -1,8 +1,45 @@
-/*
+/* Style for the replacement line */
+.bulldozer-marker-line {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  vertical-align: middle;
+  position: relative;
+  margin: 2px 0;
+  cursor: pointer; /* Add pointer cursor to indicate clickability */
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+/* Style for the name box inside the start line */
+.bulldozer-name-box {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  padding: 1px 5px;
+  font-size: 0.8em;
+  border-radius: 3px;
+  white-space: nowrap;
+  line-height: 1;
+}
 
-If your plugin does not need CSS, delete this file.
+/* Add a class to identify the start widget specifically for clicks */
+.bulldozer-start-widget-wrapper {
+    /* This class is primarily for event targeting */
+    display: contents; /* Prevents affecting layout, just for targeting */
+}
 
-*/
+
+/* Style the text content part */
+.cm-editor .cm-line span.bulldozerTEXT {
+  color: var(--text-muted);
+}
+
+/* Optional: Style when the start marker text is revealed */
+.cm-editor .cm-line span.bulldozer-revealed-marker {
+    color: grey;
+    font-style: italic;
+    background-color: rgba(200, 200, 200, 0.2);
+}
