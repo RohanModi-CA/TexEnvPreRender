@@ -1,8 +1,8 @@
 {
 	"id": "TexEnvPreRender",
 	"name": "TexEnvPreRender",
-	"version": "0.0.1",
-	"minAppVersion": "0.0.1",
+	"version": "0.0.2",
+	"minAppVersion": "0.0.2",
 	"description": "Renders questionenv and enumerate environments.",
 	"author": "Rohan Modi",
 	"authorUrl": "rohanmodi.ca",
