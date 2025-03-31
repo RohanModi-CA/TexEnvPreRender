@@ -1,10 +1,10 @@
 {
-	"id": "bulldozer-highlighter",
-	"name": "Bulldozer Highlighter",
-	"version": "1.0.0",
-	"minAppVersion": "1.0.0",
-	"description": "Highlights the word 'bulldozer' in the editor.",
-	"author": "Your Name",
-	"authorUrl": "https://your-website.com",
+	"id": "Obs-Tex-Tools",
+	"name": "Obsidian-Tex-Tools",
+	"version": "0.0.1",
+	"minAppVersion": "0.0.1",
+	"description": "Renders our question environments",
+	"author": "Rohan Modi",
+	"authorUrl": "rohanmodi.ca",
 	"isDesktopOnly": false
 }

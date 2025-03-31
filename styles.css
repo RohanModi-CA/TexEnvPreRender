@@ -25,6 +25,11 @@
   line-height: 1;
 }
 
+.bulldozer-name-box::before
+{
+	content: "Question "
+}
+
 /* Add a class to identify the start widget specifically for clicks */
 .bulldozer-start-widget-wrapper {
     /* This class is primarily for event targeting */
