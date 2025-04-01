@@ -332,6 +332,7 @@ export function addInsertQuestionBlockCommand(plugin: Plugin) {
                     .setIcon("help-circle")
                     .onClick(async () => {
                         // Use the command ID directly or construct from manifest if needed
+						// @ts-ignore
                         plugin.app.commands.executeCommandById(`${plugin.manifest.id}:insert-question-block`);
                     });
             });

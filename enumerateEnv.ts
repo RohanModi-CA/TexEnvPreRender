@@ -411,6 +411,7 @@ export function addInsertEnumerateBlockCommand(plugin: Plugin) {
                     .setTitle("Insert Enumerated List")
                     .setIcon("list-ordered")
                     .onClick(async () => {
+						// @ts-ignore
                         plugin.app.commands.executeCommandById(`${plugin.manifest.id}:insert-enumerate-block`);
                     });
             });
